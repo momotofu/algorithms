@@ -4,6 +4,9 @@ If the current item is greater than it's adjacent item, swap the two items.
 This will put the largest item at the back of the array.
 On the next iteration, don't include the last greatest item's index in the search.
 
+## Video
+`https://www.youtube.com/watch?v=P00xJgWzz2c`
+
 ## Example found on HackerRank (Java)
 ```   
 public static void bubbleSort(int[] x) {
