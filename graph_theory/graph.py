@@ -26,13 +26,14 @@ class Graph(object):
         """
         return self.__generate_edges()
 
-    def add_vertex(self, vertix):
+    def add_vertex(self, vertex):
         """
         If the vertex is not in the self.__graph_dict, a key
         "vertex" with an empty list as a value is added to
         the dictionary, otherwise nothing has to be done.
         """
-        if vertex not in self.__graph_dict[vertex] = []
+        if vertex not in self.__graph_dict:
+            self.__graph_dict[vertex] = []
 
     def add_edge(self, edge):
         """
@@ -67,4 +68,3 @@ class Graph(object):
         for edge in self.__generate_edges():
             res += str(edge) + " "
         return res
-
