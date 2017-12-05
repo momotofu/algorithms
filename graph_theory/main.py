@@ -1,4 +1,4 @@
-import graph
+from graph import Graph
 
 g = { "a" : ["d"],
       "b" : ["c"],
@@ -8,5 +8,7 @@ g = { "a" : ["d"],
       "f" : []
      }
 
-graph = graph.Graph(g)
+graph = Graph(g)
+
+print("Vertices of graph: ", graph.vertices());
 
