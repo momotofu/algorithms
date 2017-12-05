@@ -86,4 +86,4 @@ class Graph(object):
         res += "\nedges:"
         for edge in self.__generate_edges():
             res += str(edge) + " "
-        return print(res)
+        return res
