@@ -1,3 +1,3 @@
-class Node(data):
+class Node():
     def __init__(self, data):
         self.data = data
