@@ -35,12 +35,10 @@ class LinkedList():
 
     def contents(self):
         if self.head == None:
-            print("LinkedList is empty")
-            return
+            return []
         contents = []
         cur = self.head
         while cur.next != None:
             contents.append(cur.data)
             cur = cur.next
-        print(contents)
-
+        return contents
