@@ -1,8 +1,6 @@
-def permutations(string, step = 0):
-    if step == len(string):
-        return "".join(string))
-
-    for i in range(step, len(string)):
-        string_copy = [character for character in string]
-        string_copy[step], string_copy[i] = string_copy[i], string_copy[step]
-        permutations(string_copy, step + 1)
+def permutations(head, tail=''):
+    if len(head) == 0:
+        return print(tail)
+    else:
+        for i in range(len(head)):
+            permutations(head[0:i] + head[i+1:], tail + head[i])
